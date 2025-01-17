@@ -25,12 +25,9 @@ body {
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
-}
-
-.header-image{
-    
-    background-size: cover;
-    height: 706px;
+    margin: 0 auto;
+    max-width: 1900px;
+    padding: 15px;
 }
 
 .nav {
@@ -45,9 +42,9 @@ body {
     width: 50px;
     height: 20px;
     font-size: 20px;
-}
+}   
 .nav-items{
-    margin-left: 500px;
+    margin-left: 720px;
 }
 .nav-items ul{
     display: flex;
@@ -59,4 +56,25 @@ body {
 .nav-item a{
     text-decoration: none;
     color: #fff;
+}
+.header-field-image {
+    /* position: relative; */
+}
+
+.header-field-sergeev{
+    position: absolute;
+    top: 20%;
+    left: 1%
+}
+
+.header-field-logo{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+.header-field-voinov{
+   position: absolute;
+    top: 18%;
+    left: 70%;
+    
 }
