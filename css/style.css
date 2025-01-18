@@ -36,6 +36,10 @@ body {
     z-index: -1;
 }
 
+.hide-back{
+    display: none;
+}
+
 .nav {
     padding-top: 12px;
     width: 100%;
@@ -174,6 +178,17 @@ body {
     .header-field-logo{
         max-width:100px;
     
+    }
+
+    .header-back-img{
+        display: none;
+    }
+    .hide-back{
+        display: inline-block;
+        position: absolute;
+        max-width: 100%;
+        width: 1900px;
+        z-index: -1;
     }
   }
 
