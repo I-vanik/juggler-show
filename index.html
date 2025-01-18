@@ -8,6 +8,10 @@
 </head>
 <body>
     <header class="header">
+        <img class="header-back-img" src="image/back.png" alt="">
+        <div class="preloader" id="preloader">
+            <img src="image/logo-main.png" alt="">
+        </div>
         <div class="container">
             <nav class="nav">
                 <button class="btn-nav">Eng</button>
@@ -21,12 +25,15 @@
                     </ul>
                 </div>
             </nav>
-            <div class="header-field-image">
-                <!-- <img class="header-field-sergeev" src="image/sergeev.png" alt="man1"> -->
-                <img class="header-field-logo" src="image/logo-main.png" alt="logo">
-                <!-- <img class="header-field-voinov" src="image/voinov.png" alt="man2">  -->
+            <div id="scene" class="header-field-image">
+                    <img data-depth="0.6" class="header-field-logo" src="image/logo-main.png" alt="logo">
             </div>
         </div>
+       
     </header>
+
+    <script src="js/Preloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
 </html>
