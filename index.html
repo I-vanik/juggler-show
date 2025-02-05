@@ -8,15 +8,32 @@
     <title>Juggler Show</title>
   </head>
   <body>
+    <div class="preloader" id="preloader">
+      <img src="image/logo-main.png" alt="" />
+    </div>
+
     <header class="header">
       <img class="header-back-img" src="image/back.png" alt="" />
-      <img class="hide-back" src="image/Group 3 (1)M.png" alt="" />
-      <div class="preloader" id="preloader">
-        <img src="image/logo-main.png" alt="" />
-      </div>
+      <img class="hide-back" src="image/hide-back.png" alt="" />
+      
       <div class="container">
         <nav class="nav">
           <button class="btn-nav">Eng</button>
+          <div class="dropdown hide-menu" >
+            <div class="box">
+              <div class="btn not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div id="myDropdown" class="box-list">
+              <a href="#">sfdsdfsdf</a>
+              <a href="#">sfdsdfsdf</a>
+              <a href="#">sfdsdfsdf</a>
+              <a href="#">sfdsdfsdf</a>
+            </div>
+          </div>
           <div class="nav-items">
             <ul>
               <li class="nav-item"><a href="#">JUGGLER</a></li>
@@ -52,20 +69,7 @@
             adipisci ea nihil ipsa numquam cum assumenda facilis necessitatibus
             quibusdam quaerat ullam amet, nisi voluptas eos iusto sed sequi
             dolores saepe.Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Provident adipisci ea nihil ipsa numquam cum assumenda facilis
-            necessitatibus quibusdam quaerat ullam amet, nisi voluptas eos iusto
-            sed sequi dolores saepe.Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Provident adipisci ea nihil ipsa numquam cum
-            assumenda facilis necessitatibus quibusdam quaerat ullam amet, nisi
-            voluptas eos iusto sed sequi dolores saepe.Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Provident adipisci ea nihil ipsa
-            numquam cum assumenda facilis necessitatibus quibusdam quaerat ullam
-            amet, nisi voluptas eos iusto sed sequi dolores saepe.Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Provident adipisci ea
-            nihil ipsa numquam cum assumenda facilis necessitatibus quibusdam
-            quaerat ullam amet, nisi voluptas eos iusto sed sequi dolores
-            saepe.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Provident adipisci ea nihil ipsa numquam cum assumenda facilis
+            elit. Provident ad assumenda facilis
             necessitatibus quibusdam quaerat ullam amet, nisi voluptas eos iusto
             sed sequi dolores saepe.Lorem ipsum dolor sit, amet consectetur
             adipisicing elit. Provident adipisci ea nihil ipsa numquam cum
@@ -82,13 +86,26 @@
           <img src="image/01 (4) 1.png" alt="" class="team-info-img el6" />
           <img src="image/01 (4) 1.png" alt="" class="team-info-img el7" />
         </div>
+        <div class="team-info-m">
+          <p class="team-info-text-m">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+            adipisci ea nihil ipsa numquam cum assumenda facilis necessitatibus
+            quibusdam quaerat ullam amet, nisi voluptas eos iusto sed sequi
+            dolores saepe.Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Provident ad assumenda facilis
+            necesi voluptas eos iusto sed sequi dolores saepe.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="people">
       <div class="container">
         <div class="people-grid">
-          <img src="image/игорь 1.png" alt="" class="inst-image" />
+          <div class="people-img-con">
+            <img src="image/игорь 1.png" alt="" class="inst-image" />
+            <a href="#"><img src="image/img-inst.png" alt="" /></a>
+          </div>
           <div class="people-info">
             <h2 class="people-info-title">Игорь Войнов</h2>
             <p class="people-text">
@@ -100,7 +117,7 @@
           </div>
           <img src="image/unn123amed (1).png" alt="" class="people-image" />
         </div>
-        <div class="people-grid">
+        <div class="people-grid people-grid-m ">
           <img src="image/O9QXF-12312mTYZc 1.png" alt="" class="people-image" />
           <div class="people-info">
             <h2 class="people-info-title">Роман Сергеев</h2>
@@ -111,7 +128,10 @@
               temporibus, accusamus accusantium minus?
             </p>
           </div>
-          <img src="image/рома 1.png" alt="" class="inst-image" />
+          <div class="people-img-con people-img-con-m">
+            <img src="image/рома 1.png" alt="" class="inst-image " />
+            <a href="#"><img src="image/img-inst.png" alt="" /></a>
+          </div>
         </div>
       </div>
     </section>
@@ -124,13 +144,11 @@
             class="video-js"
             controls
             preload="auto"
-            width="1000"
-            height="497"
+            
             poster="image/Poster-video.png"
             data-setup="{}"
           >
             <source src="video/IMG_7783.MP4" type="video/mp4" />
-            <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider
               upgrading to a web browser that
@@ -146,20 +164,40 @@
     <section class="info">
       <div class="container">
         <div class="info-field">
-          <img src="image/01 (4) 1.png" alt="" class="info-field-img">
-          <p class="info-field-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque fugiat recusandae asperiores quidem mollitia veritatis. Repudiandae odio voluptatibus voluptates placeat, quidem beatae sint. Veritatis iusto beatae illo sit nesciunt?</p>
+          <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
+          <p class="info-field-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            atque fugiat recusandae asperiores quidem mollitia veritatis.
+            Repudiandae odio voluptatibus voluptates placeat, quidem beatae
+            sint. Veritatis iusto beatae illo sit nesciunt?
+          </p>
         </div>
         <div class="info-field">
-          <img src="image/01 (4) 1.png" alt="" class="info-field-img">
-          <p class="info-field-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque fugiat recusandae asperiores quidem mollitia veritatis. Repudiandae odio voluptatibus voluptates placeat, quidem beatae sint. Veritatis iusto beatae illo sit nesciunt?</p>
+          <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
+          <p class="info-field-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            atque fugiat recusandae asperiores quidem mollitia veritatis.
+            Repudiandae odio voluptatibus voluptates placeat, quidem beatae
+            sint. Veritatis iusto beatae illo sit nesciunt?
+          </p>
         </div>
         <div class="info-field">
-          <img src="image/01 (4) 1.png" alt="" class="info-field-img">
-          <p class="info-field-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque fugiat recusandae asperiores quidem mollitia veritatis. Repudiandae odio voluptatibus voluptates placeat, quidem beatae sint. Veritatis iusto beatae illo sit nesciunt?</p>
+          <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
+          <p class="info-field-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            atque fugiat recusandae asperiores quidem mollitia veritatis.
+            Repudiandae odio voluptatibus voluptates placeat, quidem beatae
+            sint. Veritatis iusto beatae illo sit nesciunt?
+          </p>
         </div>
         <div class="info-field">
-          <img src="image/01 (4) 1.png" alt="" class="info-field-img">
-          <p class="info-field-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque fugiat recusandae asperiores quidem mollitia veritatis. Repudiandae odio voluptatibus voluptates placeat, quidem beatae sint. Veritatis iusto beatae illo sit nesciunt?</p>
+          <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
+          <p class="info-field-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            atque fugiat recusandae asperiores quidem mollitia veritatis.
+            Repudiandae odio voluptatibus voluptates placeat, quidem beatae
+            sint. Veritatis iusto beatae illo sit nesciunt?
+          </p>
         </div>
       </div>
     </section>
@@ -167,34 +205,46 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-field">
-          <img src="image/игорь рома 1.png" alt="" class="footer-field-people">
+          <img
+            src="image/игорь рома 1.png"
+            alt=""
+            class="footer-field-people"
+          />
           <div class="footer-field-links">
             <div class="footer-field-link">
-              <a href="#"><img src="image/inst.png" alt=""></a>
-              <a href="#"><img src="image/youtube.png" alt=""></a>
+              <a href="#"><img src="image/inst.png" alt="" /></a>
+              <a href="#"><img src="image/youtube.png" alt="" /></a>
             </div>
             <button class="footer-field-btn">Contact us</button>
           </div>
-          <img src="image/footer-logo.png" alt="" class="footer-field-logo">
+          <img src="image/footer-logo.png" alt="" class="footer-field-logo" />
           <form action="">
             <div class="footer-field-form-inputs">
-              <input class="footer-field-form-input" placeholder="Как с вами связаться?" type="text"> 
-              <input class="footer-field-form-input" placeholder="Ваше сообщение" type="text"> 
+              <input
+                class="footer-field-form-input"
+                placeholder="Как с вами связаться?"
+                type="text"
+              />
+              <input
+                class="footer-field-form-input"
+                placeholder="Ваше сообщение"
+                type="text"
+              />
             </div>
             <button class="footer-field-form-btn">задать вопрос</button>
           </form>
         </div>
-        
       </div>
       <div class="footer-copyright">
         © 2025 Все права защищены (Juggler Production)
       </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
     <script src="js/Preloader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>
