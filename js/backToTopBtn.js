@@ -5,10 +5,10 @@ window.onscroll = function () {
 }
 
 function scrollCheck() {
-    if (document.documentElement.scrollTop < 100 || document.scrollTop < 100) {
-        backToTopBtn.style.display = 'none'
-    } else {
+    if (document.documentElement.scrollTop > 100 || document.scrollTop > 100) {
         backToTopBtn.style.display = 'block'
+    } else {
+        backToTopBtn.style.display = 'none'
     }
 }
 
