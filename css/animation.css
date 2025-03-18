@@ -1,0 +1,48 @@
+.people-anim1 {
+    animation-name: animation-people-grid;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+
+
+.header-field-logo{
+    animation-name: header-field-logo-up-down, header-field-logo-start;
+    animation-duration: 2s, 2s;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite, 1;
+}
+
+.element-animation{
+    opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+
+@keyframes header-field-logo-up-down {
+    0% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes header-field-logo-start {
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}

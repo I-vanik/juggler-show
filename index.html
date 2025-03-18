@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="js/backToTopBtn.js" defer></script>
+    <script src="js/animation.js" defer></script>
     <title>Juggler Show</title>
   </head>
   <body>
@@ -52,9 +55,8 @@
             </ul>
           </div>
         </nav>
-        <div id="scene" class="header-field-image">
+        <div class="header-field-image">
           <img
-            data-depth="0.6"
             class="header-field-logo"
             src="image/logo-main.png"
             alt="logo"
@@ -63,9 +65,9 @@
       </div>
     </header>
 
-    <section class="team" id="juggler">
+    <section class="team element-animation" id="juggler">
       <div class="container">
-        <h1 class="team-title">
+        <h1 class=" team-title">
           Команда <span class="team-title-span">JUGGLER</span>
         </h1>
         <div class="team-info">
@@ -107,15 +109,15 @@
       </div>
     </section>
 
-    <section class="people">
+    <section class="people ">
       <div class="container">
-        <div class="people-grid">
+        <div class="people-grid element-animation">
           <div class="people-img-con">
-            <img src="image/игорь 1.png" alt="" class="inst-image" />
-            <a href="https://www.instagram.com/igor_voinov_?igsh=ajcyOWx3Z2NmOTdn"><img src="image/img-inst.png" alt="" /></a>
+            <img src="image/игорь 1.png" alt="" class="inst-image " />
+            <a  href="https://www.instagram.com/igor_voinov_?igsh=ajcyOWx3Z2NmOTdn"><img src="image/img-inst.png" alt="" /></a>
           </div>
           <div class="people-info">
-            <h2 class="people-info-title">Игорь Войнов</h2>
+            <h2 class="people-info-title">Игорь Воинов</h2>
             <p class="people-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               in deserunt ullam, aut exercitationem nam ducimus culpa eaque
@@ -123,10 +125,10 @@
               temporibus, accusamus accusantium minus?
             </p>
           </div>
-          <img src="image/unn123amed (1).png" alt="" class="people-image" />
+          <img src="image/unn123amed (1).png" alt="" class="people-image  " />
         </div>
-        <div class="people-grid people-grid-m">
-          <img src="image/O9QXF-12312mTYZc 1.png" alt="" class="people-image" />
+        <div class="people-grid element-animation people-grid-m">
+          <img  src="image/O9QXF-12312mTYZc 1.png" alt="" class="people-image" />
           <div class="people-info">
             <h2 class="people-info-title">Роман Сергеев</h2>
             <p class="people-text">
@@ -137,15 +139,15 @@
             </p>
           </div>
           <div class="people-img-con people-img-con-m">
-            <img src="image/рома 1.png" alt="" class="inst-image" />
-            <a href="https://www.instagram.com/roman__magicman?igsh=MWZqZjA0dHlyOGliZg=="><img src="image/img-inst.png" alt="" /></a>
+            <img src="image/рома 1.png" alt="" class="inst-image"/>
+            <a  href="https://www.instagram.com/roman__magicman?igsh=MWZqZjA0dHlyOGliZg=="><img class="people-anim1" src="image/img-inst.png" alt="" /></a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="container" id="photo">
-      <div class="slider">
+      <div class="slider element-animation">
         <div class="slider_item">
           <img src="image/01 (4) 1.png" alt="">
         </div>
@@ -161,7 +163,7 @@
       </div>
     </section>
 
-    <section class="player" id="promo">
+    <section class="player element-animation" id="promo">
       <div class="container">
         <div class="player-back">
           <video
@@ -185,9 +187,9 @@
       </div>
     </section>
 
-    <section class="info" id="show">
+    <section class="info " id="show">
       <div class="container">
-        <div class="info-field">
+        <div class="info-field element-animation">
           <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
           <p class="info-field-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -196,7 +198,7 @@
             sint. Veritatis iusto beatae illo sit nesciunt?
           </p>
         </div>
-        <div class="info-field">
+        <div class="info-field element-animation">
           <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
           <p class="info-field-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -205,7 +207,7 @@
             sint. Veritatis iusto beatae illo sit nesciunt?
           </p>
         </div>
-        <div class="info-field">
+        <div class="info-field element-animation">
           <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
           <p class="info-field-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -214,7 +216,7 @@
             sint. Veritatis iusto beatae illo sit nesciunt?
           </p>
         </div>
-        <div class="info-field">
+        <div class="info-field element-animation">
           <img src="image/01 (4) 1.png" alt="" class="info-field-img" />
           <p class="info-field-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
